@@ -157,7 +157,8 @@
         },
         "uniStatistics" : {
             "enable" : true
-        }
+        },
+        "title" : "uniapp"
     },
     "vueVersion" : "2",
     "mp-kuaishou" : {
