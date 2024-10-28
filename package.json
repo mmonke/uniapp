@@ -6,8 +6,9 @@
 	"description": "uni-app 框架示例，一套代码，同时发行到iOS、Android、H5、小程序等多个平台，请使用手机扫码快速体验 uni-app 的强大功能",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"predeploy": "npm run unpackage/dist/build/web",
-	    "deploy": "gh-pages -d unpackage/dist/build/web"
+		"submodule:init": "git submodule update --init --recursive & cd branch-pages & git checkout gh-pages",
+		"submodule:pull": "cd branch-pages & git pull origin gh-pages",
+		"submodule:push": "cd branch-pages & git add . & git commit -m [update]branch-pages & git push origin gh-pages"
 	},
 	"repository": "https://github.com/dcloudio/hello-uniapp.git",
 	"keywords": [

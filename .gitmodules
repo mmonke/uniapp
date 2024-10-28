@@ -1,0 +1,4 @@
+[submodule "branch-pages"]
+	path = branch-pages
+	url = https://github.com/mmonke/uniapp.git
+	branch = gh-pages
